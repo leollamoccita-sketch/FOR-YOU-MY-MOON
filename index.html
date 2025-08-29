@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para ti 💖</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      text-align: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 60px;
+      font-size: 2.5em;
+      color: #b30059;
+    }
+    button {
+      margin-top: 20px;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      background-color: #ff4d94;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e60073;
+    }
+    .carta {
+      display: none;
+      margin: 40px auto;
+      width: 70%;
+      padding: 20px;
+      background: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      font-size: 1.2em;
+      line-height: 1.6;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌹 Para alguien muy especial 🌹</h1>
+  <button onclick="mostrarCarta()">Abrir mi carta 💌</button>
+
+  <!-- Canción de Junior H (invisible, autoplay y loop) -->
+  <iframe width="0" height="0"
+    src="https://www.youtube.com/embed/nujrD85ipVI?autoplay=1&loop=1&playlist=nujrD85ipVI"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
+  <!-- Tu carta -->
+  <div class="carta" id="carta">
+    💖 Mi amor,  
+    Desde que llegaste a mi vida todo cambió para mejor.  
+    No hay día en el que no agradezca por tenerte a mi lado,  
+    por tu sonrisa, por tu cariño y por cada momento juntos.  
+
+    Quiero que esta página sea un pedacito de mi corazón,  
+    recordándote siempre cuánto significas para mí.  
+
+    🌹 Con todo mi amor, siempre tuyo. 🌹
+  </div>
+
+  <script>
+    function mostrarCarta() {
+      const carta = document.getElementById("carta");
+      carta.style.display = "block";
+      setTimeout(() => { carta.style.opacity = 1; }, 100);
+    }
+  </script>
+</body>
+</html>
